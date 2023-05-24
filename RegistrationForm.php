@@ -368,7 +368,7 @@ if (isset($_GET['del'])) {
                     </div>
                     <div class="form-group">
                         <label for="phone">Phone Number</label>
-                        <input type="phone" name="phone" id="phone" class="form-control" value="<?php echo $phone; ?>" required>
+                        <input type="phone" name="phone" id="phone" class="form-control" value="<?php echo $phone; ?>" maxlength="14" required>
                     </div>
 
                     <div id="playerform" class="<?php echo ($role != 'Player') ? 'd-none' : ''; ?>">
